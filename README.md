@@ -35,7 +35,7 @@ Nombre de cavitats = 8
 Material pom 
 Dimensió 100mm 
 
-100*0,0075*1,15*1=0,8625 de camp de total de tolerància o ±0,43  
+100 * 0,0075*1,15*1=0,8625 de camp de total de tolerància o ±0,43  
 
 
 
