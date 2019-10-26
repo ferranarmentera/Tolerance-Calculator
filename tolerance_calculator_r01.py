@@ -1,5 +1,49 @@
 # tolerance calculator considers the material and level of precicion of the parts
 # variables definition quality leve
+
+
+class Tolerance():
+    def __init__(self, dimension, mat, cav, quality):
+        self.dimension = dimension.value()
+        self.mat = mat.value()
+        self.cav = cav.value()
+        self.quality = quality.value()
+
+    def user_questions(self):
+        print("-----")
+        print("Linear Dimension" + " : " + self.dimension)
+        print("Material" + " : " + self.mat)
+        print("Number of Cavities" + " : " + self.cav)
+        print("Quality Level " + " : " + self.quality)
+
+
+def ask_user(message=''):
+    user_input = ''
+    while not user_input:
+        user_input = input(message)
+    return user_input
+
+
+def form_complete(values, placement, length):
+    placement = []
+    while len(placement) < length:
+        dimension = ask_user("Enter Dimension: ")
+        mat = ask_user("Enter material: ")
+        cav = ask_user("Enter number of cavities: ")
+        quality = ask_user("Enter Quality level: ")
+        values = Tolerance(dimension, mat, cav, quality)
+        placement.append(values)
+    return placement
+
+
+if __name__ == '__main__':
+
+    Tolerance = form_complete('Tolerance', 3)
+    for a in range(len(Tolerance)):
+        Tolerance[self].user_questions()
+
+"""p1 = Person("John", 36)
+p1.myfunc()
 coarsev = 0.0075
 mediumv = 0.005
 highv = 0.003
@@ -33,4 +77,4 @@ elif uservalue_quality == 'high':
     x = uservalue*highv*cavityFactor
     print("toleance range is:", x)
 else:
-    print("not entered value")
+    print("not entered value")"""
