@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>270</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tolerance Calculator</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enter dimension value </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>170</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Chose process quality level</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>60</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>30</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tolerance field feasible</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>140</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>1 Cavity</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2  Cavities</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4  Cavities</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6  Cavities</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8  Cavities</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>16 Cavities</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>32 Cavities</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>64 Cavities</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>200</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Coarse</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Medium</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>High</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Chose the material </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>140</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>POMC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>POMH</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PA66 GF30</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PA6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PPA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PPS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PBT GF15</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PA66 GF15</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PA66 GF40</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PBT GF15</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PBT GF40</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ABS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PEHD</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PP</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PET</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>110</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Number of Cavities</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
