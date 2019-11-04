@@ -4,10 +4,10 @@
 
 class Tolerance():
     def __init__(self, dimension, mat, cav, quality):
-        self.dimension = dimension.value()
-        self.mat = mat.value()
-        self.cav = cav.value()
-        self.quality = quality.value()
+        self.dimension = dimension.values()
+        self.mat = mat.values()
+        self.cav = cav.values()
+        self.quality = quality.values()
 
     def user_questions(self):
         print("-----")
@@ -38,9 +38,9 @@ def form_complete(values, placement, length):
 
 if __name__ == '__main__':
 
-    Tolerance = form_complete('Tolerance', 3)
+    Tolerances = form_complete('Tolerance', 'Tolerances', 3)
     for a in range(len(Tolerance)):
-        Tolerance[self].user_questions()
+        Tolerances[a].user_questions()
 
 """p1 = Person("John", 36)
 p1.myfunc()
